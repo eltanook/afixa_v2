@@ -116,7 +116,7 @@ export default function FaqPage() {
   return (
     <>
       <div className="page-header" style={{
-        backgroundImage: 'linear-gradient(to bottom, rgba(15, 15, 15, 0.75), rgba(0, 0, 0, 0.6)), url(/img/carousel-3-mobile.webp)'
+        backgroundImage: 'linear-gradient(to bottom, rgba(15, 15, 15, 0.75), rgba(0, 0, 0, 0.6)), url(/img/carousel-2.webp)'
       }}>
         <h1>Preguntas Frecuentes</h1>
         <nav className="breadcrumb">

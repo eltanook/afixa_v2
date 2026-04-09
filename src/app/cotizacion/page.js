@@ -28,7 +28,7 @@ export default function CotizacionPage() {
   return (
     <>
       <div className="page-header" style={{
-        backgroundImage: 'linear-gradient(to bottom, rgba(15, 15, 15, 0.75), rgba(0, 0, 0, 0.6)), url(/img/carousel-1-mobile.webp)'
+        backgroundImage: 'linear-gradient(to bottom, rgba(15, 15, 15, 0.75), rgba(0, 0, 0, 0.6)), url(/img/general/header_bg.png)'
       }}>
         <h1>Solicitar Cotización</h1>
         <nav className="breadcrumb">
