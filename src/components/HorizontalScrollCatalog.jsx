@@ -203,7 +203,7 @@ export default function HorizontalScrollCatalog() {
           }
           .product-card-catalog {
              width: 80vw !important;
-             height: 55vh !important;
+             height: 50vh !important;
           }
           .product-card-info-wrap {
              padding: 16px !important;

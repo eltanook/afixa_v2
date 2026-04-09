@@ -162,20 +162,21 @@ export default function FaqPage() {
           .sticky-contact-box {
             position: sticky;
             top: 120px;
-            background: var(--bg-dark);
+            background: var(--bg-alt);
             border: 1px solid var(--border);
             border-radius: 20px;
             padding: 32px;
-            color: #fff;
+            color: var(--text);
             box-shadow: var(--shadow-xl);
           }
           .sticky-contact-box h3 {
             font-family: var(--font-head);
             font-size: 1.5rem;
             margin-bottom: 16px;
+            color: var(--text);
           }
           .sticky-contact-box p {
-            color: rgba(255,255,255,0.6);
+            color: var(--text-muted);
             font-size: 0.95rem;
             line-height: 1.6;
             margin-bottom: 24px;
@@ -189,16 +190,19 @@ export default function FaqPage() {
             display: flex;
             align-items: center;
             gap: 10px;
-            color: #fff;
+            color: var(--text);
             text-decoration: none;
             font-weight: 600;
             padding: 12px;
-            background: rgba(255,255,255,0.05);
+            background: var(--bg);
+            border: 1px solid var(--border);
             border-radius: 8px;
             transition: all 0.3s;
           }
           .sticky-contact-links a:hover {
             background: var(--brand-red);
+            color: #fff;
+            border-color: var(--brand-red);
           }
           @media (max-width: 991px) {
             .section > .container-afix {

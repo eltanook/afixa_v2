@@ -1,14 +1,9 @@
 export const metadata = {
-  title: "Preguntas Frecuentes | Soporte y Guía de Sistemas AFIX",
-  description: "Despejá tus dudas sobre el funcionamiento del sistema Clic-Clac, materiales utilizados, envíos a todo el país y personalización de productos de exhibición.",
-  keywords: "preguntas afix, soporte técnico marcos clic clac, envíos cartelería argentina, cómo funciona sistema clic-clac, ayuda cartelería profesional",
-  openGraph: {
-    title: "FAQ - Preguntas Frecuentes | AFIX Sistemas",
-    description: "Todo lo que necesitás saber sobre nuestros sistemas de exhibición en un solo lugar. Información técnica y comercial.",
-    url: "https://www.afixsa.com.ar/faq",
-  },
+  title: "Preguntas Frecuentes | Soporte y Guía de Uso AFIX",
+  description: "¿Tenés dudas sobre cómo elegir un marco Clic-Clac o cómo tomar las medidas? Consultá nuestra sección de soporte técnico y FAQ para optimizar tu experiencia.",
+  keywords: ["faq afix", "medidas marcos aluminio", "como comprar marcos", "soporte tecnico afix", "envios marcos argentina"],
 };
 
 export default function FaqLayout({ children }) {
-  return <>{children}</>;
+  return children;
 }

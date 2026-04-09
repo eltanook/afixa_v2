@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AFIX S.A. - Plataforma de Exhibición Profesional (Modernizada)
 
-## Getting Started
+Bienvenido al repositorio oficial de la plataforma web de **AFIX S.A.**, una aplicación moderna construida con Next.js diseñada para ofrecer una experiencia premium de navegación, cotización y exploración de sistemas de exhibición publicitaria.
 
-First, run the development server:
+## 🚀 Tecnologías Core
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Framework**: [Next.js 15+](https://nextjs.org/) (App Router)
+- **Lenguaje**: JavaScript (ES6+)
+- **Animaciones**: [Framer Motion](https://www.framer.com/motion/) & CSS Custom Properties
+- **Estilos**: Vanilla CSS Modules (Arquitectura escalable y performante)
+- **Tema**: Sistema dinámico Light/Dark Mode con persistencia
+- **Optimización**: Vercel-ready con configuraciones avanzadas de seguridad y SEO
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Características Premium
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **Hero Video Scrubber**: Una experiencia de onboarding interactiva donde el usuario controla el video de instrucciones mediante el scroll, facilitando el aprendizaje del Sistema Clic-Clac®.
+- **Catálogo Horizontal Fluido**: Exploración de productos mediante scroll lateral con aceleración fluida y modales de inspección de alta resolución.
+- **Antes/Después Interactivo**: Comparativa visual en tiempo real para demostrar el impacto de la tecnología AFIX frente a sistemas tradicionales.
+- **Cotizador Inteligente**: Formulario optimizado para capturar necesidades específicas de los clientes corporativos.
+- **SEO de Alto Nivel**: Integración de Microdatos (JSON-LD), metadatos dinámicos por página y optimización de OpenGraph para redes sociales.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📱 Diseño Responsivo
 
-## Learn More
+El sitio ha sido diseñado bajo una filosofía **Mobile-First**, asegurando que:
+- La jerarquía visual **35/65** se mantenga adaptable en todos los dispositivos.
+- Los menús y navegaciones se transformen en componentes táctiles e intuitivos.
+- El rendimiento de carga sea excelente incluso en redes móviles gracias a la optimización de imágenes nativa de Next.js.
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Instalación y Desarrollo
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1.  **Clonar el repositorio**:
+    ```bash
+    git clone https://github.com/eltanook/afixa_v2.git
+    cd afixsa_new
+    ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2.  **Instalar dependencias**:
+    ```bash
+    npm install
+    ```
 
-## Deploy on Vercel
+3.  **Correr en modo desarrollo**:
+    ```bash
+    npm run dev
+    ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4.  **Construir para producción**:
+    ```bash
+    npm run build
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🌐 Despliegue en Vercel
+
+El proyecto incluye un archivo `vercel.json` preconfigurado con:
+- **Cabeceras de Seguridad**: Content Security Policy (CSP), HSTS y protección contra XSS.
+- **Caching**: Estrategias de optimización para activos estáticos.
+
+---
+
+Desarrollado con ❤️ para **AFIX S.A.** por **Zevetix - Advanced Agentic Coding**.

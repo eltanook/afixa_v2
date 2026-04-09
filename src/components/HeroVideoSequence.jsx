@@ -78,7 +78,7 @@ export default function HeroVideoSequence() {
         M_W = vpW * 0.9; M_H = vpH * 0.6;
         M_L = (vpW - M_W) / 2; M_T = (vpH - M_H) / 2;
         
-        E_W = vpW; E_H = vpH * 0.5; // Top half on mobile
+        E_W = vpW; E_H = vpH * 0.35; // 35% height on mobile
         E_L = 0; E_T = 0;
       } else {
         S_W = (cw - padding * 2 - gap) / 2;

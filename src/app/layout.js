@@ -5,11 +5,19 @@ import Footer from "@/components/Footer";
 import CustomCursor from "@/components/CustomCursor";
 import ScrollAnimations from "@/components/ScrollAnimations";
 import Icon from "@/components/Icon";
+import StructuredData from "@/components/StructuredData";
 
 export const metadata = {
-  title: "AFIX - Sistemas de Exhibición Profesional | Fabricantes de Marcos Clic-Clac Argentina",
+  metadataBase: new URL('https://www.afixsa.com.ar'),
+  title: {
+    default: "AFIX - Sistemas de Exhibición Profesional | Marcos Clic-Clac Argentina",
+    template: "%s | AFIX Sistemas"
+  },
   description: "AFIX S.A. fabricamos sistemas de exhibición premium con tecnología Clic-Clac. Líderes en Argentina con más de 20 años de trayectoria. Marcos de aluminio, porta afiches, tótems y displays publicitarios de alta calidad.",
-  keywords: "marcos de aluminio, sistema clic-clac, marcos clic-clac argentina, exhibición profesional, tótems publicitarios, displays para gráficas, señalética corporativa, portafolletos aluminio, porta afiches, cartelería profesional argentina, fabricación nacional marcos aluminio",
+  keywords: ["marcos de aluminio", "sistema clic-clac", "marcos clic-clac argentina", "exhibición profesional", "tótems publicitarios", "displays para gráficas", "señalética corporativa", "portafolletos aluminio", "porta afiches", "cartelería profesional argentina", "fabricación nacional marcos aluminio"],
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
     title: "AFIX - Sistemas de Exhibición Profesional | Marcos Clic-Clac",
     description: "Líderes en fabricación de sistemas de exhibición con tecnología Clic-Clac. Marcos de aluminio premium para una exposición estilizada y cambio ágil de gráficas.",
@@ -17,11 +25,20 @@ export const metadata = {
     url: "https://www.afixsa.com.ar",
     siteName: "AFIX Sistemas de Exhibición",
     locale: "es_AR",
+    images: [
+      {
+        url: '/img/nosotros/fabrica.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'AFIX Sistemas de Exhibición Profesional',
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "AFIX - Sistemas de Exhibición Profesional",
     description: "Marcos de aluminio Clic-Clac y sistemas de exhibición premium fabricados en Argentina.",
+    images: ['/img/nosotros/fabrica.jpg'],
   },
   robots: {
     index: true,
@@ -34,13 +51,13 @@ export const metadata = {
       'max-snippet': -1,
     },
   },
-  metadataBase: new URL('https://www.afixsa.com.ar'),
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="es" suppressHydrationWarning>
       <head>
+        <StructuredData />
         <link rel="icon" href="/favicon_dark.png" media="(prefers-color-scheme: light)" />
         <link rel="icon" href="/favicon_light.png" media="(prefers-color-scheme: dark)" />
       </head>

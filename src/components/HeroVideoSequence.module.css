@@ -193,8 +193,10 @@
 
   .stepsContainer {
     width: 100vw;
-    align-items: flex-end;
-    padding-bottom: 10vh;
+    height: 65vh;
+    top: 35vh;
+    align-items: center;
+    padding-bottom: 0;
   }
 
   .stepBlock {

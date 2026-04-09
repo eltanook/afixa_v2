@@ -15,6 +15,8 @@ const TEAM = [
   { name: 'NATASHA', role: 'Ejecutiva de Ventas', img: '/img/EQUIPO/7.png' },
 ];
 
+const CLIENTS_IMG = Array.from({ length: 18 }, (_, i) => `/img/CLIENTES/${i + 1}.png`);
+
 export default function NosotrosPage() {
   return (
     <>
@@ -135,6 +137,17 @@ export default function NosotrosPage() {
           
           <TeamGrid team={TEAM} />
           
+        </div>
+      </section>
+
+      {/* ===== CLIENTS TICKER (Marcas) ===== */}
+      <section style={{ padding: '64px 0', background: 'var(--bg)', overflow: 'hidden', borderTop: '1px solid var(--border)' }}>
+        <div className="clients-ticker-wrap" style={{ padding: 0 }}>
+          <div className="clients-ticker">
+            {[...CLIENTS_IMG, ...CLIENTS_IMG].map((src, i) => (
+              <img key={i} src={src} alt="Cliente AFIX" style={{ height: '32px' }} />
+            ))}
+          </div>
         </div>
       </section>
 

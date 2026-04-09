@@ -39,7 +39,19 @@ export default function Footer() {
       setHeight(footerRef.current?.offsetHeight || 0);
     });
     if (footerRef.current) ob.observe(footerRef.current);
-    return () => ob.disconnect();
+    
+    // Disable reveal effect if mobile to avoid jumpy scroll
+    const handleResize = () => {
+      if (window.innerWidth < 768) setHeight(0);
+      else if (footerRef.current) setHeight(footerRef.current.offsetHeight);
+    };
+    window.addEventListener('resize', handleResize);
+    handleResize();
+
+    return () => {
+      ob.disconnect();
+      window.removeEventListener('resize', handleResize);
+    };
   }, []);
 
   return (

@@ -132,6 +132,9 @@ export default function CotizacionPage() {
           .cotizacion-left-col {
             min-height: 300px;
           }
+          .section {
+            padding-top: 120px !important;
+          }
         }
       `}</style>
     </>

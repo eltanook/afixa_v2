@@ -122,6 +122,8 @@ export default function SistemasScroll({ systems }) {
           .systems-card-mobile {
             padding: 24px !important;
             width: 90vw !important;
+            height: auto !important;
+            min-height: 60vh !important;
           }
           .systems-features-grid {
              grid-template-columns: 1fr !important;
