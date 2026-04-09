@@ -1,17 +1,27 @@
 'use client';
 import { useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 
 export default function ScrollAnimations() {
+  const pathname = usePathname();
+
   useEffect(() => {
     // Reveal on scroll
     const reveals = document.querySelectorAll('.reveal');
     const observer = new IntersectionObserver(
       (entries) => {
-        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('revealed'); } });
+        entries.forEach(e => { 
+          if (e.isIntersecting) { 
+            e.target.classList.add('revealed'); 
+          } 
+        });
       },
       { threshold: 0.1 }
     );
     reveals.forEach(el => observer.observe(el));
+
+    // Reset revealed state on new pages (optional but good for consistency)
+    // reveals.forEach(el => el.classList.remove('revealed'));
 
     // Counter-up
     const counters = document.querySelectorAll('[data-counter]');
@@ -54,8 +64,5 @@ export default function ScrollAnimations() {
       counterObserver.disconnect();
       window.removeEventListener('scroll', onScroll);
       if (backToTop) backToTop.removeEventListener('click', onBTTClick);
-    };
-  }, []);
-
   return null;
 }
