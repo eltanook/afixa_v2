@@ -122,8 +122,9 @@ export default function HeroVideoSequence() {
         drawY = (vpH - drawH) / 2;
       }
 
-      // Clear canvas with #f7f7f7 to match video background
-      ctx.fillStyle = '#f7f7f7';
+      // Clear canvas with theme-aware color or #f7f7f7 to match video background
+      // In dark mode, we'll use a slightly darker tone to reduce the "light box" effect
+      ctx.fillStyle = theme === 'light' ? '#f7f7f7' : '#0d0d0d';
       ctx.fillRect(0, 0, vpW / dpr, vpH / dpr);
       ctx.drawImage(img, 0, 0, NATIVE_W, NATIVE_H, drawX, drawY, drawW, drawH);
     };
@@ -298,7 +299,7 @@ export default function HeroVideoSequence() {
                      </p>
                      <div style={{marginTop: '32px', display: 'flex', gap: '24px', alignItems: 'center', flexWrap: 'wrap'}}>
                         <Link href="https://www.afixsa.com.ar/productos" target="_blank" className="btn-primary-afix">Explorar Catálogo</Link>
-                        <Link href="/nosotros" className="cta-link-afix" style={{ color: '#fff' }}>Conocer Más <Icon name="arrow-right" size={16}/></Link>
+                        <Link href="/nosotros" className="cta-link-afix">Conocer Más <Icon name="arrow-right" size={16}/></Link>
                      </div>
                  </div>
              </div>

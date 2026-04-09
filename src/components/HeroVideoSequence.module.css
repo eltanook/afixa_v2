@@ -10,7 +10,7 @@
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background: #f7f7f7;
+  background: var(--bg);
 }
 
 .heroCard {
@@ -21,8 +21,8 @@
   width: 95vw;
   max-width: 1400px;
   height: 75vh;
-  background: var(--bg-dark);
-  color: #fff;
+  background: var(--bg-alt);
+  color: var(--text);
   border-radius: 16px;
   display: flex;
   box-shadow: var(--shadow-lg);
@@ -47,11 +47,11 @@
   line-height: 1.05;
   letter-spacing: -0.5px;
   margin: 16px 0;
-  color: #fff;
+  color: var(--text);
 }
 
 .hDesc {
-  color: rgba(255,255,255,0.6);
+  color: var(--text-muted);
   font-size: 1.05rem;
   max-width: 480px;
   line-height: 1.6;
@@ -109,12 +109,12 @@
   font-weight: 700;
   margin-bottom: 24px;
   line-height: 1;
-  color: #000;
+  color: var(--text);
   letter-spacing: -2px;
 }
 
 .stepBlock p {
-  color: #333;
+  color: var(--text-muted);
   font-size: 1.75rem;
   line-height: 1.5;
   max-width: 620px;
