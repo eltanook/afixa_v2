@@ -20,7 +20,9 @@ const CLIENTS_IMG = Array.from({ length: 18 }, (_, i) => `/img/clientes/${i + 1}
 export default function NosotrosPage() {
   return (
     <>
-      <div className="page-header">
+      <div className="page-header" style={{
+        backgroundImage: 'linear-gradient(to bottom, rgba(15, 15, 15, 0.75), rgba(0, 0, 0, 0.6)), url(/img/general/header_bg.png)'
+      }}>
         <h1>Sobre Nosotros</h1>
         <nav className="breadcrumb">
           <a href="/">Inicio</a>

@@ -28,7 +28,9 @@ const SOCIALS = [
 export default function ContactoPage() {
   return (
     <>
-      <div className="page-header">
+      <div className="page-header" style={{
+        backgroundImage: 'linear-gradient(to bottom, rgba(15, 15, 15, 0.75), rgba(0, 0, 0, 0.6)), url(/img/general/header_bg.png)'
+      }}>
         <h1>Contacto</h1>
         <nav className="breadcrumb" aria-label="Breadcrumb">
           <a href="/">Inicio</a>

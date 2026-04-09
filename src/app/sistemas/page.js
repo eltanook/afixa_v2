@@ -51,7 +51,11 @@ const SYSTEMS = [
 export default function SistemasPage() {
   return (
     <>
-      <div className="page-header" style={{ paddingBottom: '160px', borderBottom: 'none' }}>
+      <div className="page-header" style={{ 
+        paddingBottom: '160px', 
+        borderBottom: 'none',
+        backgroundImage: 'linear-gradient(to bottom, rgba(15, 15, 15, 0.75), rgba(0, 0, 0, 0.6)), url(/img/carousel-2.webp)'
+      }}>
         <h1>Sistemas de Exhibición</h1>
         <nav className="breadcrumb">
           <a href="/">Inicio</a>
