@@ -133,7 +133,7 @@ export default function ContactoPage() {
           {/* Map */}
           <div className="reveal" style={{ borderRadius: 'var(--radius-lg)', overflow: 'hidden', height: '380px', border: '1px solid var(--border)' }}>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.6517831060736!2d-58.387953124515654!3d-34.63824327293815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334b0ab824415%3A0xadbc8894721c35!2sLuzuriaga%20645%2C%20C1280%20CABA!5e0!3m2!1ses-419!2sar!4v1688473371147!5m2!1ses-419!2sar"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.5335340011598!2d-58.390935123416234!3d-34.64122645948145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb472fbb16ed%3A0x15267f6f6144a20c!2sAfix%20sa!5e0!3m2!1ses!2sar!4v1775762000505!5m2!1ses!2sar"
               width="100%"
               height="100%"
               allowFullScreen
