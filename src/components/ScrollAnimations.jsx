@@ -20,9 +20,6 @@ export default function ScrollAnimations() {
     );
     reveals.forEach(el => observer.observe(el));
 
-    // Reset revealed state on new pages (optional but good for consistency)
-    // reveals.forEach(el => el.classList.remove('revealed'));
-
     // Counter-up
     const counters = document.querySelectorAll('[data-counter]');
     const counterObserver = new IntersectionObserver(
@@ -64,5 +61,8 @@ export default function ScrollAnimations() {
       counterObserver.disconnect();
       window.removeEventListener('scroll', onScroll);
       if (backToTop) backToTop.removeEventListener('click', onBTTClick);
+    };
+  }, [pathname]);
+
   return null;
 }
