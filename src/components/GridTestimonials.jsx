@@ -29,15 +29,15 @@ const TESTIMONIALS = [
   },
   {
     text: "Profesionalismo y calidez. Entienden que detrás de cada sistema hay una marca que quiere destacar. Nuestra fachada cambió radicalmente.",
-    name: "Andrés Reyes",
-    role: "ARQUITECTO",
-    img: "/img/EQUIPO/5.png"
+    name: "Dante Moflete",
+    role: "CHEF",
+    img: "/img/equipo/5.png"
   },
   {
-    text: "No sabía por dónde empezar y AFIX me lo explicó de forma simple y efectiva. Ahora mis sucursales lucen impecables y el recambio es en segundos.",
-    name: "Lucía Méndez",
-    role: "EMPRENDEDORA",
-    img: "/img/EQUIPO/6.png"
+    text: "El soporte post-venta es impecable. Surgió una duda con la instalación de los tótems y en 10 minutos tuvimos la solución videollamada mediante.",
+    name: "Esteban Quito",
+    role: "ARQUITECTO",
+    img: "/img/equipo/6.png"
   }
 ];
 
