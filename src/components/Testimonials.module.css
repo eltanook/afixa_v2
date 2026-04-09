@@ -1,0 +1,168 @@
+.header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+.title {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin: 12px 0;
+}
+.sub {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+}
+
+/* Three-card layout */
+.carousel {
+  display: grid;
+  grid-template-columns: 1fr 1.35fr 1fr;
+  gap: 24px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+/* All cards base */
+.card {
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.45s cubic-bezier(0.25, 0.1, 0.25, 1);
+  position: relative;
+}
+
+/* Side cards - dimmed and smaller */
+.cardSide {
+  opacity: 0.45;
+  transform: scale(0.95);
+  filter: blur(1px);
+  cursor: pointer;
+}
+.cardSide:hover {
+  opacity: 0.65;
+  transform: scale(0.97);
+  filter: blur(0px);
+}
+
+/* Main active card */
+.cardMain {
+  opacity: 1;
+  transform: scale(1);
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.12);
+}
+
+.cardInner {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 36px 32px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardSide .cardInner {
+  pointer-events: none;
+  background: var(--bg-alt);
+}
+
+/* Quote on main */
+.quoteMain {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--text);
+  font-style: italic;
+  margin-bottom: 28px;
+  position: relative;
+  flex: 1;
+}
+
+/* Quote on side cards */
+.quote {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  font-style: italic;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  flex: 1;
+}
+
+/* Author row */
+.author {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.author strong {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text);
+}
+.author span {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+/* Controls */
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.arrowBtn {
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  border: 1.5px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  display: flex; align-items: center; justify-content: center;
+  transition: all 0.25s;
+}
+.arrowBtn:hover {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: white;
+  transform: scale(1.08);
+}
+
+.dots {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--border);
+  border: none;
+  padding: 0;
+  transition: all 0.3s;
+}
+.dotActive {
+  background: var(--primary);
+  transform: scale(1.4);
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    grid-template-columns: 1fr;
+  }
+  .cardSide {
+    display: none;
+  }
+  .cardMain {
+    transform: scale(1);
+  }
+  .cardInner {
+    padding: 28px 24px;
+  }
+}

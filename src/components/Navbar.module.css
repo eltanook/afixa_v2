@@ -1,0 +1,364 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition: all 0.5s ease-in-out;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.headerScrolled {
+  padding: 1rem;
+}
+
+/* ==================== SCROLLED STATE (PILL) ==================== */
+.pillContainer {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.25rem;
+  padding: 0 8px 0 16px;
+  transition: all 0.5s ease-in-out;
+  border-radius: 16px;
+  height: 52px;
+}
+
+@media (min-width: 768px) {
+  .pillContainer {
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    box-shadow: var(--shadow-md);
+  }
+}
+
+.pillLogo {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  transition: transform 0.5s ease;
+}
+
+.pillLogo:hover {
+  transform: scale(1.05);
+}
+
+.navCapsule {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .navCapsule {
+    display: flex;
+    align-items: center;
+    background: #000000;
+    border-radius: 12px;
+    padding: 0 1rem;
+    height: 44px;
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+}
+
+:global([data-theme='dark']) .navCapsule {
+  background: #1a1a1a;
+  border-color: rgba(255,255,255,0.08);
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.navItem {
+  position: relative;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #ccc;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.navItem:hover {
+  color: #fff;
+}
+
+.navItemActive {
+  color: #fff;
+}
+
+.navDot {
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  background: var(--brand-red);
+  border-radius: 50%;
+  transform: translateX(-50%) scale(0);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.navItem:hover .navDot,
+.navItemActive .navDot {
+  transform: translateX(-50%) scale(1);
+  opacity: 1;
+}
+
+.themeToggleBtn {
+  margin-left: 0.5rem;
+  padding: 0.35rem;
+  color: #aaa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.themeToggleBtn:hover {
+  color: #fff;
+}
+
+.ctaScrolled {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .ctaScrolled {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    color: #000;
+    height: 40px;
+    padding: 0 1rem;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
+  .ctaScrolled:hover {
+    background: rgba(255,255,255,0.9);
+    transform: scale(1.02);
+  }
+  :global([data-theme='dark']) .ctaScrolled {
+    background: var(--brand-red);
+    color: #fff;
+  }
+  :global([data-theme='dark']) .ctaScrolled:hover {
+    background: #a0020e;
+  }
+}
+
+
+/* ==================== TOP STATE (NO SCROLL) ==================== */
+.topWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.topContainer {
+  width: 100%;
+  max-width: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 4vw 1.5rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.topLogo {
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s;
+}
+.topLogo:hover {
+  transform: scale(1.05);
+}
+
+.topNavLinks {
+  display: none;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .topNavLinks {
+    display: flex;
+  }
+  /* The normal CTA from global.css `btn-primary-afix` handles itself */
+}
+
+.topNavItem {
+  position: relative;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text);
+  padding: 0.5rem;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+.topNavItem:hover {
+  color: var(--brand-red);
+}
+
+.topNavItemActive {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.topNavItemWhite {
+  color: #fff !important;
+}
+
+.topNavDot {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  background: var(--brand-red);
+  border-radius: 50%;
+  transform: translateX(-50%) scale(0);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.topNavItem:hover .topNavDot,
+.topNavItemActive .topNavDot {
+  transform: translateX(-50%) scale(1);
+  opacity: 1;
+}
+
+.topThemeToggle {
+  color: var(--text);
+  padding: 0.5rem;
+  transition: color 0.3s;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.topThemeToggle:hover {
+  color: var(--brand-red);
+}
+
+
+/* ==================== MOBILE ==================== */
+.mobileIcons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .mobileIcons {
+    display: none;
+  }
+}
+
+.iconBtn {
+  background: transparent;
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+}
+
+:global([data-theme='dark']) .iconBtn {
+  background: transparent;
+  color: #fff;
+}
+
+.iconBtnSolid {
+  background: transparent;
+  color: #fff;
+}
+:global([data-theme='dark']) .iconBtnSolid {
+  background: transparent;
+  color: #fff;
+}
+
+.mobileMenu {
+  position: fixed;
+  top: 72px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-10px);
+  width: 90vw;
+  background: var(--bg-dark);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: var(--shadow-lg);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  z-index: 40;
+}
+
+.mobileMenuOpen {
+  opacity: 1;
+  pointer-events: all;
+  transform: translateX(-50%) translateY(0);
+}
+
+.mobileNav {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+
+.mobileNavItem {
+  position: relative;
+  padding: 1rem 1.5rem;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.mobileNavItem:hover {
+  background: rgba(255,255,255,0.05);
+}
+
+.mobileNavItemActive {
+  background: rgba(255,255,255,0.1);
+}
+
+.mobileNavIndicator {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--brand-red);
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.mobileCta {
+  margin: 1rem 1.5rem 0;
+  background: var(--brand-red);
+  color: #fff;
+  padding: 0.75rem;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+}

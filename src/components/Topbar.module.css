@@ -1,0 +1,67 @@
+.topbar {
+  background: #000;
+  color: #fff;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  letter-spacing: 0.03em;
+  padding: 0 4vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 38px;
+  width: 100%;
+}
+
+.left, .right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #fff;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  white-space: nowrap;
+  line-height: 1;
+}
+.item svg, .item span.afix-icon {
+  color: #BF0311 !important;
+  transition: all 0.3s ease;
+}
+.item:hover { 
+  color: #BF0311; 
+}
+.item:hover svg, .item:hover span.afix-icon {
+  filter: drop-shadow(0 0 5px rgba(191,3,17,0.6));
+  transform: scale(1.1);
+}
+
+.divider {
+  color: rgba(255,255,255,0.12);
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.social {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255,255,255,0.4);
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+.social:hover {
+  color: #BF0311;
+  background: rgba(191,3,17,0.1);
+}
+
+@media (max-width: 900px) { .topbar { display: none; } }

@@ -1,0 +1,210 @@
+.sequenceContainer {
+  height: 800vh; /* Full sequence: 1vh hero, 1vh transition, 1vh center/left, 5vh video scrub = 8vh total screens */
+  background: var(--bg);
+  position: relative;
+}
+
+.stickyWrapper {
+  position: sticky;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #f7f7f7;
+}
+
+.heroCard {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95vw;
+  max-width: 1400px;
+  height: 75vh;
+  background: var(--bg-dark);
+  color: #fff;
+  border-radius: 16px;
+  display: flex;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  will-change: transform, opacity;
+  transform-origin: center;
+}
+
+.heroTextCol {
+  flex: 1;
+  padding: 48px;
+  display: flex;
+  align-items: center;
+  z-index: 2; /* Text over placeholder */
+}
+
+.hTitle {
+  font-family: var(--font-head);
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.5px;
+  margin: 16px 0;
+  color: #fff;
+}
+
+.hDesc {
+  color: rgba(255,255,255,0.6);
+  font-size: 1.05rem;
+  max-width: 480px;
+  line-height: 1.6;
+}
+
+.heroCanvasCol {
+  flex: 1;
+  /* Just an empty space where the global absolute Canvas will overlay exactly */
+}
+
+.animCanvas {
+  position: absolute;
+  top: 0; left: 0;
+  object-fit: cover;
+  will-change: width, height, transform, border-radius;
+  pointer-events: none;
+  /* border-radius initially matches the hero card right side */
+  border-radius: 16px; /* Dynamically managed if needed */
+  background: transparent;
+}
+
+/* Steps Block Container (Right Side 50vw during scrub) */
+.stepsContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 65vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.stepBlock {
+  position: absolute;
+  width: 90%;
+  max-width: 700px;
+  opacity: 0;
+  will-change: transform, opacity;
+}
+
+.stepNum {
+  font-family: var(--font-head);
+  color: var(--brand-red);
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 3px;
+  margin-bottom: 8px;
+}
+
+.stepBlock h2 {
+  font-family: var(--font-head);
+  font-size: clamp(3.5rem, 7vw, 6.5rem);
+  font-weight: 700;
+  margin-bottom: 24px;
+  line-height: 1;
+  color: #000;
+  letter-spacing: -2px;
+}
+
+.stepBlock p {
+  color: #333;
+  font-size: 1.75rem;
+  line-height: 1.5;
+  max-width: 620px;
+}
+
+/* LOADER */
+.loaderOverlay {
+  position: fixed;
+  inset: 0;
+  background: var(--bg);
+  z-index: 999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loaderCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.loaderLogoWrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loaderLogoAnim {
+  animation: pulseLogo 2s ease-in-out infinite;
+}
+
+@keyframes pulseLogo {
+  0%, 100% { opacity: 0.8; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.05); }
+}
+
+.loaderLine {
+  height: 2px;
+  background: var(--brand-red);
+  margin-top: 16px;
+  transition: width 0.3s ease;
+  box-shadow: 0 0 10px var(--brand-red);
+}
+
+.loaderPctText {
+  font-family: var(--font-head);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--brand-red);
+  letter-spacing: 2px;
+}
+
+/* MOBILE RESPONSIVE adjustments */
+@media (max-width: 768px) {
+  .heroCard {
+    flex-direction: column;
+    height: 85vh;
+  }
+  
+  .heroTextCol {
+    padding: 32px 24px;
+    height: 55%;
+    align-items: flex-start;
+    padding-top: 40px;
+  }
+  
+  .hTitle { font-size: 2.2rem; }
+  
+  .heroCanvasCol {
+    height: 45%;
+    width: 100%;
+  }
+
+  .stepsContainer {
+    width: 100vw;
+    align-items: flex-end;
+    padding-bottom: 10vh;
+  }
+
+  .stepBlock {
+    width: 90%;
+    padding: 24px;
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-lg);
+  }
+}

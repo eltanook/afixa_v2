@@ -1,0 +1,131 @@
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 48px;
+  padding-bottom: 60px;
+}
+
+.title {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  font-family: var(--font-head);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.infoRow {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.6);
+  font-family: var(--font-body);
+}
+
+.socialRow {
+  display: flex;
+  gap: 12px;
+}
+
+.social {
+  width: 42px;
+  height: 42px;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255,255,255,0.6);
+  transition: all 0.3s ease;
+  background: rgba(255,255,255,0.02);
+}
+
+.social:hover {
+  background: var(--brand-red);
+  border-color: var(--brand-red);
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(191,3,17,0.3);
+}
+
+.linkList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.fLink {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.6);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  font-family: var(--font-body);
+}
+
+.fLinkArrow {
+  opacity: 0;
+  width: 0;
+  overflow: hidden;
+  color: var(--brand-red);
+  transition: all 0.3s ease;
+  display: inline-flex;
+  margin-right: 0px;
+  transform: translateX(-10px);
+}
+
+.fLink:hover {
+  color: #fff;
+}
+
+.fLink:hover .fLinkArrow {
+  opacity: 1;
+  width: 14px;
+  margin-right: 8px;
+  transform: translateX(0);
+}
+
+@media (max-width: 991px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+.footerMain {
+  background: var(--bg-dark);
+  color: var(--text-light);
+  width: 100%;
+  overflow: hidden;
+  position: relative; /* Ensure children can align absolutely */
+}
+
+.gridBg {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(191, 3, 17, 0.12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(191, 3, 17, 0.12) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+}
