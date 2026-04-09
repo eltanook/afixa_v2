@@ -18,7 +18,7 @@ export const metadata = {
   twitter: { card: "summary_large_image", title: "AFIX — Marcos Clic-Clac Argentina", description: "Único fabricante nacional del sistema Clic-Clac®." },
 };
 
-const CLIENTS_IMG = Array.from({ length: 18 }, (_, i) => `/img/CLIENTES/${i + 1}.png`);
+const CLIENTS_IMG = Array.from({ length: 18 }, (_, i) => `/img/clientes/${i + 1}.png`);
 
 export default function HomePage() {
   return (

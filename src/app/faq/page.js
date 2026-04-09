@@ -16,12 +16,12 @@ const FAQS = {
     {
       q: '¿Cómo tomo las medidas del Marco Clic Clac?',
       a: 'Nosotros trabajamos con tres medidas: la exterior del marco, la de la gráfica (o lámina) que usted imprime, y la visual u óptica, que es el espacio que queda visible luego de ponerla en el marco. Los clientes que fabrican muebles utilizan la medida exterior, ya que colocan el marco dentro de un espacio. Los clientes que tienen una medida standard para imprimir utilizan la medida de lámina. Siempre que quiera colocarlo en algún espacio empotrado, dejar 0,5 cm de cada lado para cambiar su lámina.',
-      img: '/img/PRODUCTOS/preg1.jpeg',
+      img: '/img/productos/preg1.jpeg',
     },
     {
       q: '¿Cómo tomo las medidas del Marco Modular Afix?',
       a: 'Trabajamos con dos medidas: la exterior del marco y la de la gráfica (o lámina) que usted imprime. Tenga en cuenta que existen unos 5 cm entre la lámina y el marco. Si ninguna de las medidas que se encuentran en la tienda es la que usted desea, seleccione OTRA MEDIDA y haga click en "CONSULTAR".',
-      img: '/img/PRODUCTOS/preg2.jpeg',
+      img: '/img/productos/preg2.jpeg',
     },
     {
       q: '¿Hay medidas estándar?',
@@ -30,7 +30,7 @@ const FAQS = {
     {
       q: '¿Qué perfil elegir?',
       a: 'Esta parte es a criterio del cliente. Nosotros recomendamos "a mayor medida, mayor espesor del marco".',
-      img: '/img/PRODUCTOS/preg3.jpeg',
+      img: '/img/productos/preg3.jpeg',
     },
     {
       q: '¿Cómo se arma un Marco Modular Afix?',

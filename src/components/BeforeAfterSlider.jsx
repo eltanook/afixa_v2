@@ -76,7 +76,7 @@ export default function BeforeAfterSlider() {
             >
               {/* IMAGE A - BEFORE (Background) */}
               <div style={{ position: 'absolute', inset: 0 }}>
-                <Image src="/img/GENERAL/antiguo.jpg" alt="Exhibición Tradicional - Antes" fill style={{ objectFit: 'cover', pointerEvents: 'none' }} draggable={false} />
+                <Image src="/img/general/antiguo.jpg" alt="Exhibición Tradicional - Antes" fill style={{ objectFit: 'cover', pointerEvents: 'none' }} draggable={false} />
                 <div style={{ position: 'absolute', bottom: '16px', right: '16px', background: 'rgba(0,0,0,0.6)', color: 'white', padding: '6px 14px', borderRadius: '4px', fontSize: '0.85rem', fontWeight: 600 }}>Tradicional</div>
               </div>
 
@@ -86,7 +86,7 @@ export default function BeforeAfterSlider() {
                   clipPath: `inset(0 ${100 - position}% 0 0)`,
                   zIndex: 2
               }}>
-                <Image src="/img/GENERAL/actual.jpg" alt="Exhibición AFIX - Después" fill style={{ objectFit: 'cover', pointerEvents: 'none' }} draggable={false} />
+                <Image src="/img/general/actual.jpg" alt="Exhibición AFIX - Después" fill style={{ objectFit: 'cover', pointerEvents: 'none' }} draggable={false} />
                 <div style={{ position: 'absolute', bottom: '16px', left: '16px', background: 'var(--brand-red)', color: 'white', padding: '6px 14px', borderRadius: '4px', fontSize: '0.85rem', fontWeight: 600 }}>Con AFIX</div>
               </div>
 

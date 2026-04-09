@@ -6,16 +6,16 @@ import TeamGrid from "@/components/TeamGrid";
 import ScrollingMarqueeTestimonials from "@/components/ScrollingMarqueeTestimonials";
 
 const TEAM = [
-  { name: 'JONY', role: 'Jefe de Taller', img: '/img/EQUIPO/1.png' },
-  { name: 'RODRI', role: 'Encargado de Corte', img: '/img/EQUIPO/2.png' },
-  { name: 'DANI', role: 'Encargado de Armado', img: '/img/EQUIPO/3.png' },
-  { name: 'LAU', role: 'Administrativa', img: '/img/EQUIPO/4 (1).jpg' },
-  { name: 'SILVIO', role: 'Gerente', img: '/img/EQUIPO/5.png' },
-  { name: 'IVÁN', role: 'Gerente de Compras', img: '/img/EQUIPO/6 (1).jpg' },
-  { name: 'NATASHA', role: 'Ejecutiva de Ventas', img: '/img/EQUIPO/7.png' },
+  { name: 'JONY', role: 'Jefe de Taller', img: '/img/equipo/1.png' },
+  { name: 'RODRI', role: 'Encargado de Corte', img: '/img/equipo/2.png' },
+  { name: 'DANI', role: 'Encargado de Armado', img: '/img/equipo/3.png' },
+  { name: 'LAU', role: 'Administrativa', img: '/img/equipo/4 (1).jpg' },
+  { name: 'SILVIO', role: 'Gerente', img: '/img/equipo/5.png' },
+  { name: 'IVÁN', role: 'Gerente de Compras', img: '/img/equipo/6 (1).jpg' },
+  { name: 'NATASHA', role: 'Ejecutiva de Ventas', img: '/img/equipo/7.png' },
 ];
 
-const CLIENTS_IMG = Array.from({ length: 18 }, (_, i) => `/img/CLIENTES/${i + 1}.png`);
+const CLIENTS_IMG = Array.from({ length: 18 }, (_, i) => `/img/clientes/${i + 1}.png`);
 
 export default function NosotrosPage() {
   return (
@@ -35,10 +35,10 @@ export default function NosotrosPage() {
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '80px', alignItems: 'center' }}>
             <div style={{ position: 'relative', height: '500px' }} className="reveal">
               <div style={{ position: 'absolute', inset: 0, borderRadius: 'var(--radius-lg, 24px)', overflow: 'hidden', border: '1px solid var(--border)' }}>
-                <Image src="/img/GENERAL/1.jpg" alt="AFIX fábrica" fill style={{ objectFit: 'cover' }} />
+                <Image src="/img/general/1.jpg" alt="AFIX fábrica" fill style={{ objectFit: 'cover' }} />
               </div>
               <div style={{ position: 'absolute', top: '-40px', left: '-40px', width: '220px', height: '220px', borderRadius: 'var(--radius-lg, 24px)', overflow: 'hidden', border: '4px solid var(--bg)', boxShadow: 'var(--shadow-lg)', animation: 'slideInLeft 1s ease-out forwards' }}>
-                <Image src="/img/GENERAL/5.JPG" alt="AFIX equipo" fill style={{ objectFit: 'cover' }} />
+                <Image src="/img/general/5.jpg" alt="AFIX equipo" fill style={{ objectFit: 'cover' }} />
               </div>
             </div>
 
@@ -76,7 +76,7 @@ export default function NosotrosPage() {
 
       {/* Proceso de Fabricación (Parallax Banner) */}
       <section className="section" style={{
-        background: 'linear-gradient(to right, rgba(15,15,15,0.95) 0%, rgba(15,15,15,0.5) 100%), url(/img/GENERAL/18.JPG) center center no-repeat',
+        background: 'linear-gradient(to right, rgba(15,15,15,0.95) 0%, rgba(15,15,15,0.5) 100%), url(/img/general/18.jpg) center center no-repeat',
         backgroundSize: 'cover',
         backgroundAttachment: 'fixed',
         color: '#fff',

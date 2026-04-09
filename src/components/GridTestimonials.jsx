@@ -7,25 +7,25 @@ const TESTIMONIALS = [
     text: "Olvidate de pegamentos, cintas o personal especializado. La tecnología de AFIX impacta el rendimiento operativo de nuestras tiendas enormemente.",
     name: "Karla Wasabichi",
     role: "STUNDUPERA",
-    img: "/img/EQUIPO/1.png"
+    img: "/img/equipo/1.png"
   },
   {
     text: "Ogui fue amable y paciente desde el inicio, brindándome opciones claras y útiles. Un profesionalismo que se nota en cada detalle del sistema.",
     name: "Omar Villarreal",
     role: "VETERINARIO",
-    img: "/img/EQUIPO/2.png"
+    img: "/img/equipo/2.png"
   },
   {
     text: "Con AFIX encontré el apoyo y guía que necesitaba; tengo la tranquilidad de saber que mi inversión está bien protegida y el impacto es total.",
     name: "Cristina Tirado",
     role: "INGENIERA",
-    img: "/img/EQUIPO/3.png"
+    img: "/img/equipo/3.png"
   },
   {
     text: "La asesoría constante de AFIX nos da una sensación de seguridad absoluta. Siempre están innovando y eso se refleja en la calidad de sus productos.",
     name: "Dani Romero",
     role: "CHEF",
-    img: "/img/EQUIPO/4.png"
+    img: "/img/equipo/4.png"
   },
   {
     text: "Profesionalismo y calidez. Entienden que detrás de cada sistema hay una marca que quiere destacar. Nuestra fachada cambió radicalmente.",

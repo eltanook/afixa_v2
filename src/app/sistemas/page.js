@@ -17,7 +17,7 @@ const SYSTEMS = [
     desc: 'Revolucionario sistema que permite abrir el marco sin necesidad de herramientas ni desmontar de la pared. Ideal para actualizar información visual de forma rápida y sencilla. Perfecto para empresas con múltiples sucursales donde no cuentan con personal especializado para actualizar material gráfico.',
     features: ['Apertura sin bisagras', 'Protección UV', 'Sin herramientas', 'Múltiples perfiles'],
     video: 'https://www.youtube.com/embed/wwP9Fmgw9C4',
-    img: '/img/PRODUCTOS/MCC32-A4-AL.png',
+    img: '/img/productos/mcc32-a4-al.png',
   },
   {
     id: 'marcos-modulares',
@@ -26,7 +26,7 @@ const SYSTEMS = [
     desc: 'Cuatro barras de aluminio y cuatro ángulos con fichas especiales para sujetar y tensar láminas. Su principal ventaja es la adaptabilidad a todo tipo de medidas y materiales. Ocupa mínimo espacio cuando no está en uso y se rearma fácilmente gracias a su intuitivo sistema de encastre.',
     features: ['Totalmente desarmable', 'Armado sin herramientas', 'Adaptable a cualquier medida', 'Liviano y práctico'],
     video: 'https://www.youtube.com/embed/dg0sb-fOSSs',
-    img: '/img/PRODUCTOS/COMBI-A4-AL.png',
+    img: '/img/productos/combi-a4-al.png',
   },
   {
     id: 'poster-snap',
@@ -35,7 +35,7 @@ const SYSTEMS = [
     desc: 'Dos barras de aluminio con el exclusivo sistema ClicClac® y cierre hermético con polímero antideslizante para sujeción perfecta de grandes formatos. Ideal para colgar lonas, vinilos o impresiones en papel.',
     features: ['Sujeción segura', 'Grandes dimensiones', 'Fácil instalación', 'Sistema ClicClac®'],
     video: 'https://www.youtube.com/embed/wwP9Fmgw9C4',
-    img: '/img/PRODUCTOS/MCC50-A4-AL.png',
+    img: '/img/productos/mcc50-a4-al.png',
   },
   {
     id: 'hang-paper',
@@ -44,7 +44,7 @@ const SYSTEMS = [
     desc: 'Barra de aluminio con sistema de rodillos internos que retiene cualquier papel insertado, liberándolo solo con un movimiento intencional. Ideal para oficinas, restaurantes, hoteles, colegios y hogares.',
     features: ['Sistema de rodillos', 'Múltiples aplicaciones', 'Fácil carga', 'Alta durabilidad'],
     video: 'https://www.youtube.com/embed/wwP9Fmgw9C4',
-    img: '/img/PRODUCTOS/PEDESTAL-A4-AL.png',
+    img: '/img/productos/pedestal-a4-al.png',
   },
 ];
 

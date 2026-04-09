@@ -5,14 +5,14 @@ import Link from 'next/link';
 import Icon from './Icon';
 
 const PRODUCTS = [
-  { name: 'Marcos Clic-Clac 32', sub: 'El Estándar Indiscutible', img: '/img/PRODUCTOS/MCC32-A4-AL.png', href: '/sistemas#marcos-clicclac' },
-  { name: 'Marcos Clic-Clac 20', sub: 'Compacto y Dinámico', img: '/img/PRODUCTOS/MCC20-A4-AL.png', href: '/sistemas#marcos-clicclac' },
-  { name: 'Marcos Clic-Clac 18', sub: 'Perfil Fino y Elegante', img: '/img/PRODUCTOS/MCC18-A4-AL.png', href: '/sistemas#marcos-clicclac' },
-  { name: 'Marcos Modulares', sub: 'Versatilidad Absoluta', img: '/img/PRODUCTOS/COMBI-A4-AL.png', href: '/sistemas#marcos-modulares' },
-  { name: 'Poster Snap', sub: 'Grandes Formatos Seguros', img: '/img/PRODUCTOS/MCC50-A4-AL.png', href: '/sistemas#poster-snap' },
-  { name: 'Cajas Backlight', sub: 'Iluminación Premium', img: '/img/PRODUCTOS/CAJA%20BACKLIGHT-A4-AL%202.png', href: '/sistemas#backlight' },
-  { name: 'Pedestales', sub: 'Oficinas y Restoranes', img: '/img/PRODUCTOS/PEDESTAL-A4-AL.png', href: '/sistemas#hang-paper' },
-  { name: 'Caballetes', sub: 'Comunicación en Doble Vía', img: '/img/PRODUCTOS/CABALLETE-A4-AL.png', href: '/sistemas#hang-paper' },
+  { name: 'Marcos Clic-Clac 32', sub: 'El Estándar Indiscutible', img: '/img/productos/mcc32-a4-al.png', href: '/sistemas#marcos-clicclac' },
+  { name: 'Marcos Clic-Clac 20', sub: 'Compacto y Dinámico', img: '/img/productos/mcc20-a4-al.png', href: '/sistemas#marcos-clicclac' },
+  { name: 'Marcos Clic-Clac 18', sub: 'Perfil Fino y Elegante', img: '/img/productos/mcc18-a4-al.png', href: '/sistemas#marcos-clicclac' },
+  { name: 'Marcos Modulares', sub: 'Versatilidad Absoluta', img: '/img/productos/combi-a4-al.png', href: '/sistemas#marcos-modulares' },
+  { name: 'Poster Snap', sub: 'Grandes Formatos Seguros', img: '/img/productos/mcc50-a4-al.png', href: '/sistemas#poster-snap' },
+  { name: 'Cajas Backlight', sub: 'Iluminación Premium', img: '/img/productos/caja backlight-a4-al 2.png', href: '/sistemas#backlight' },
+  { name: 'Pedestales', sub: 'Oficinas y Restoranes', img: '/img/productos/pedestal-a4-al.png', href: '/sistemas#hang-paper' },
+  { name: 'Caballetes', sub: 'Comunicación en Doble Vía', img: '/img/productos/caballete-a4-al.png', href: '/sistemas#hang-paper' },
 ];
 
 export default function HorizontalScrollCatalog() {

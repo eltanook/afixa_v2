@@ -4,9 +4,9 @@ import { createPortal } from 'react-dom';
 import Image from 'next/image';
 
 const slides = [
-  { img: '/img/PRODUCTOS/preg1.jpeg', alt: 'Sistema Clic-Clac', title: 'Sistema Clic-Clac' },
-  { img: '/img/PRODUCTOS/preg2.jpeg', alt: 'Sistema Modular', title: 'Sistema Modular' },
-  { img: '/img/PRODUCTOS/preg3.jpeg', alt: 'Perfiles Disponibles', title: 'Perfiles Disponibles' },
+  { img: '/img/productos/preg1.jpeg', alt: 'Sistema Clic-Clac', title: 'Sistema Clic-Clac' },
+  { img: '/img/productos/preg2.jpeg', alt: 'Sistema Modular', title: 'Sistema Modular' },
+  { img: '/img/productos/preg3.jpeg', alt: 'Perfiles Disponibles', title: 'Perfiles Disponibles' },
 ];
 
 export default function ImageCarousel() {
