@@ -32,6 +32,17 @@
   transform-origin: center;
 }
 
+.cardGridBg {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(191, 3, 17, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(191, 3, 17, 0.08) 1px, transparent 1px);
+  background-size: 30px 30px;
+  pointer-events: none;
+  z-index: 1;
+}
+
 .heroTextCol {
   flex: 1;
   padding: 48px;
